@@ -87,11 +87,15 @@ if __name__ == '__main__':
             Pool = ThreadPool(2)
             for uri in lists:
                 uri = uri.replace('\n', '')
+                if uri.endswith('/'):
+                    uri = uri[:-1]
                 Pool.add_task(Mass, uri)
             Pool.wait_completion()
         else:
             for uri in lists:
                 uri = uri.replace('\n', '')
+                if uri.endswith('/'):
+                    uri = uri[:-1]
                 Mass(uri)
 
 
