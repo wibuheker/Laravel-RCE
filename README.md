@@ -1,10 +1,10 @@
 # Laravel-RCE
 
 # Install
-`git clone https://github.com/wibuheker/Laravel-RCE.git`
-`cd Laravel-RCE`
-`git clone https://github.com/ambionics/phpggc.git`
-`python3 run.py -h`
+```git clone https://github.com/wibuheker/Laravel-RCE.git
+cd Laravel-RCE
+git clone https://github.com/ambionics/phpggc.git
+python3 run.py -h```
 # Usage
 
 Single :
