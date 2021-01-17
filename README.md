@@ -4,6 +4,7 @@
 > git clone https://github.com/wibuheker/Laravel-RCE.git<br />
 > cd Laravel-RCE<br />
 > git clone https://github.com/ambionics/phpggc.git<br />
+> pip3 install requests readline termcolor argparse<br />
 > python3 run.py -h
 # Usage
 
