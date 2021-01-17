@@ -10,7 +10,7 @@
 Single :
 python3 run.py -t http://redacted.gg
 
-Mass:
-python3 run.py -t list.txt
-or if u want use thread
+Mass:<br />
+python3 run.py -t list.txt<br />
+or if u want use thread <br />
 python3 run.py -t list.txt --thread 2
